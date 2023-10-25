@@ -1,6 +1,6 @@
 package isp;
 
-public class Car implements VehicleInterface {
+public class Car implements VehicleInterface, DoorInterface {
     // Can be implemented
     @Override
     public void drive() {
@@ -16,6 +16,6 @@ public class Car implements VehicleInterface {
     }
     @Override
     public void openDoors() {
-        
+
     }
 }
