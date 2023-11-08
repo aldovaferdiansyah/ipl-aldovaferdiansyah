@@ -1,7 +1,7 @@
 package cleancode;
 
-class DtaRcrd102 {
-    private Date genymdhms;
-    private Date modymdhms;
+class Costumer {
+    private Date generationTimestamp;
+    private Date modificationTimestamp;
     private final String pszqint = "102";
 }
