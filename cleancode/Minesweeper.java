@@ -3,7 +3,6 @@ package cleancode;
 public class Minesweeper(){
     public final static int STATUS_VALUE = 0;
     public final static int FLAGGED = 4;
-
     public List<int[]> getlaggedCells(){
         List<int[]> flaggedCells = new ArrayList<int[]>();
             for (int[] cell : gameBoard)
