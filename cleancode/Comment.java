@@ -1,16 +1,17 @@
 package cleancode;
 
 public class Comment {
-    * Changes (from 11-Oct-2001)
-    * --------------------------
-    * 11-Oct-2001 : Re-organised the class and moved it to new
-    * package com.jrefinery (DG);
-    * 05-Nov-2001 : Added a getDescription() method, and
-    * eliminated NotableDate class is gone (DG); Changed
-    * getPreviousDayOfWeek(),
-    * getFollowingDayOfWeek() and
-    * getNearesDayOfWeek() to correct bugs (DG);
-    * 05-Nov-2001 : Fixed bug in SpreadsheetDate class (DG);
-    * 29-May-2002 : Moved the month constants into a separate
-    * interface (MonthConstants) (DG);
+    /**
+     * Default constructor.
+     */
+    protected AnnualDateRule(){ }
+    /** The Day of the month. */
+    private int dayOfMonth;
+    /**
+     * Returns the day of the month.
+     * @return the day of the month.
+     */
+    public int getDayOfMonth(){
+        return dayOfMonth;
+    }
 }
