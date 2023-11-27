@@ -1,27 +1,15 @@
-import java.io.*;
-
 public class ExcepTest {
     public static void main(String args[]) {
-        FileInputStream file = null;
-        byte x;
-
-        String fileName = "C:\\Users\\HP\\Pictures\\Dokumen Aldova\\3. Kuliah (S1)\\SEMESTER 5\\3. Implementasi Perangkat Lunak\\0. Praktikum\\Modul 1 (DONE)\\IPL\\defensiveprogramming\\file.txt";
-
-        try {
-            file = new FileInputStream(fileName);
-            x = (byte) file.read();
-        } catch (FileNotFoundException f) {
-            f.printStackTrace();
-        } catch (IOException i) {
-            i.printStackTrace();
-        } finally {
+        int a[] = new int[2];
+        
             try {
-                if (file != null) {
-                    file.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Access element three :" + a[3]);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Exception thrown :" + e);
+            }finally {
+                a[0] = 6;
+                System.out.println("First element value: " + a[0]);
+                System.out.println("The finally statement is executed");
             }
-        }
     }
 }
